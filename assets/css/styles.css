@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--color: #7264d6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 149px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 8px;
+    border: 1px solid #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background: #212832;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+}
+
+.label__name {
+    margin-left: 12px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #696d77;
+}
+
+.section-heading {
+    margin-top: 12px;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #212832;
+}
+
+.section-desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    font-weight: 400;
+    color: #696d76;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+}
+
+.header--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+}
+
+.navbar {
+    margin-left: 47px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 23px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #696d76;
+}
+
+.navbar__link:hover {
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__link {
+    padding: 8px 28px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #212832;
+}
+
+.header-action__btn {
+    --height: 52px;
+
+    min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    padding-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+}
+
+.hero__content {
+    width: 47%;
+    padding: 57px 0;
+}
+
+.hero__media {
+    margin-left: 50px;
+    padding-left: 100px;
+}
+
+.hero__heading {
+    width: 500px;
+    font-size: 6rem;
+}
+
+.hero__heading--highlight {
+    color: #7264d6;
+}
+
+.hero__desc {
+    margin: 20px 10px 40px 0;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 23px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+}
+
+.contact-form__submit {
+    border-radius: 8px;
+    background: var(--primary--color);
+    border: none;
+    outline: none;
+}
+
+.hero__content--privacy-policy {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+    color: #696d76;
+}
+
+.mobile-app__inner {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+}
+
+.mobile-app__selfie-camera-decor {
+    position: absolute;
+    z-index: 1;
+    width: 144px;
+    height: 36px;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3c2f60;
+    border-radius: 0px 0px 18px 18px;
+}
+
+.mobile-app__card {
+    position: relative;
+    margin: 40px 11px 0;
+    padding: 16px;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(
+        60deg,
+        rgba(134, 121, 228, 0.9) 30%,
+        rgba(114, 100, 214, 1) 60%
+    );
+    overflow: hidden;
+}
+
+.mobile-app__card-type {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.35;
+}
+
+.mobile-app__card-account-balance {
+    margin-top: 2px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.36;
+    color: #fff;
+}
+
+.mobile-app__card-info {
+    margin-top: 32px;
+    display: flex;
+    column-gap: 12px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.mobile-app__card-expiration,
+.mobile-app__card-holder {
+    min-width: 57px;
+}
+
+.mobile-app__card-type,
+.mobile-app__card-holder,
+.mobile-app__card-holder-name {
+    z-index: 1;
+}
+
+.mobile-app__card-value {
+    display: flex;
+    margin-top: 5px;
+    column-gap: 36px;
+}
+
+.mobile-app__card-expiration-date {
+    width: 33px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.mobile-app__card-holder-name {
+    min-width: 107px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.mobile-app__card-decor {
+    position: absolute;
+}
+
+.mobile-app__card-decor:nth-of-type(1) {
+    top: 16px;
+    right: 16px;
+}
+
+.mobile-app__card-decor:nth-of-type(2) {
+    top: 0;
+    left: 0;
+}
+
+.mobile-app__card-decor:nth-of-type(3) {
+    right: 0;
+    bottom: 0;
+}
+
+.transaction {
+    margin: 24px 11px 0;
+}
+
+.transaction__history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.375;
+    color: #31456a;
+}
+
+.transaction-list {
+    margin-top: 24px;
+}
+
+.transaction-item {
+    display: flex;
+}
+
+.transaction-item + .transaction-item {
+    margin-top: 28px;
+}
+
+.transaction-item__type {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 14px;
+}
+
+.transaction-item__type-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #212832;
+}
+
+.transaction-item__type-info {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #696d76;
+}
+
+.transaction-item__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.transaction__value {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #212832;
+}
+
+.transaction__date {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #696d76;
+}
+
+.deposite-info {
+    position: absolute;
+    display: flex;
+    top: 99px;
+    left: -112px;
+    width: 174px;
+    height: 46px;
+    padding: 16px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.deposite-info__title {
+    margin: 0 19px 0 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #31456a;
+}
+
+.deposite-info__value {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4ab5e3;
+}
+
+.interest-info {
+    position: absolute;
+    top: 115px;
+    right: -186px;
+    padding: 29px 33px 41px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.interest-info__title {
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.interest-info__desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.375;
+    color: #fff;
+}
+
+.funds {
+    position: absolute;
+    bottom: 52px;
+    right: -86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.funds__saved-icon {
+    width: 20px;
+    height: 26px;
+}
+
+.funds__info {
+    margin-left: 11px;
+}
+
+.funds__value {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.funds__name {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+}

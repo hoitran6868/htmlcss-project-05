@@ -1,11 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CeloBank</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CeloBank-Digital Payment For Everyone.</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header header--sticky">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <!-- Logo -->
+                        <a href="#">
+                            <img
+                                src="./assets/img/logo.svg"
+                                alt="CeloBank"
+                                class="logo"
+                            />
+                        </a>
+                        <!-- Navbar -->
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link">Home</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link"
+                                        >Products</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link"
+                                        >Features</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Log in</a>
+                        <a href="#!" class="btn header-action__btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero content -->
+                    <section
+                        class="hero__content"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                    >
+                        <div class="label">
+                            <img
+                                src="./assets/img/section-label-decor.svg"
+                                alt=""
+                            />
+                            <p class="label__name">Digital Smart Wallet</p>
+                        </div>
+                        <h1 class="section-heading hero__heading">
+                            Digital
+                            <strong class="hero__heading--highlight"
+                                >Payment
+                            </strong>
+                            For Everyone.
+                        </h1>
+                        <p class="section-desc hero__desc">
+                            We bring together everything that’s required to
+                            build websites and apps that accept payments and
+                            send payouts globally. We are the best platform.
+                        </p>
+                        <!-- Form -->
+                        <form action="" class="contact-form">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="Your email address"
+                                class="contact-form__input"
+                            />
+                            <button class="btn contact-form__submit">
+                                Get Started
+                            </button>
+                        </form>
+                        <p class="hero__content--privacy-policy">
+                            *We’ll respect the inbox and never share your email.
+                        </p>
+                    </section>
+                    <!-- Hero mobile app -->
+                    <div
+                        class="hero__media"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
+                        <div class="mobile-app">
+                            <div class="mobile-app__inner">
+                                <div
+                                    class="mobile-app__selfie-camera-decor"
+                                ></div>
+                                <div class="mobile-app__card">
+                                    <p class="mobile-app__card-type">
+                                        Main Balance
+                                    </p>
+                                    <b class="mobile-app__card-account-balance">
+                                        $78,355.17
+                                    </b>
+                                    <div class="mobile-app__card-info">
+                                        <p class="mobile-app__card-expiration">
+                                            VALID THUR
+                                        </p>
+                                        <p class="mobile-app__card-holder">
+                                            CARD HOLDER
+                                        </p>
+                                    </div>
+                                    <div class="mobile-app__card-value">
+                                        <p
+                                            class="mobile-app__card-expiration-date"
+                                        >
+                                            08/22
+                                        </p>
+                                        <p class="mobile-app__card-holder-name">
+                                            Md Moshqur Alam
+                                        </p>
+                                    </div>
+                                    <!-- Card decorations -->
+                                    <img
+                                        src="./assets/img/card-decor-01.png"
+                                        alt=""
+                                        class="mobile-app__card-decor"
+                                    />
+                                    <img
+                                        src="./assets/img/card-decor-02.png"
+                                        alt=""
+                                        class="mobile-app__card-decor"
+                                    />
+                                    <img
+                                        src="./assets/img/card-decor-03.png"
+                                        alt=""
+                                        class="mobile-app__card-decor"
+                                    />
+                                </div>
+                                <!-- Transactions -->
+                                <div class="transaction">
+                                    <div class="transaction__history">
+                                        <p class="transaction-title">
+                                            Transactions
+                                        </p>
+                                        <img
+                                            src="./assets/icons/transaction-list-icon.png"
+                                            alt=""
+                                            class="transaction-icon"
+                                        />
+                                    </div>
+
+                                    <ul class="transaction-list">
+                                        <!-- Transaction item 1 -->
+                                        <li class="transaction-item">
+                                            <img
+                                                src="./assets/icons/transaction-type-icon-01.svg"
+                                                alt=""
+                                            />
+                                            <div class="transaction-item__type">
+                                                <p
+                                                    class="transaction-item__type-name"
+                                                >
+                                                    Received Money
+                                                </p>
+                                                <span
+                                                    class="transaction-item__type-info"
+                                                    >email@gmail.com
+                                                </span>
+                                            </div>
+                                            <div class="transaction-item__info">
+                                                <span class="transaction__value"
+                                                    >+$1,600
+                                                </span>
+                                                <time class="transaction__date"
+                                                    >Sep 23
+                                                </time>
+                                            </div>
+                                        </li>
+
+                                        <!-- Transaction item 2 -->
+                                        <li class="transaction-item">
+                                            <img
+                                                src="./assets/icons/transaction-type-icon-02.svg"
+                                                alt=""
+                                            />
+                                            <div class="transaction-item__type">
+                                                <p
+                                                    class="transaction-item__type-name"
+                                                >
+                                                    Send Money
+                                                </p>
+                                                <span
+                                                    class="transaction-item__type-info"
+                                                    >Airbnb Payment
+                                                </span>
+                                            </div>
+                                            <div class="transaction-item__info">
+                                                <span class="transaction__value"
+                                                    >- $600
+                                                </span>
+                                                <time class="transaction__date"
+                                                    >Sep 23
+                                                </time>
+                                            </div>
+                                        </li>
+
+                                        <!-- Transaction item 3 -->
+                                        <li class="transaction-item">
+                                            <img
+                                                src="./assets/icons/transaction-type-icon-03.svg"
+                                                alt=""
+                                            />
+                                            <div class="transaction-item__type">
+                                                <p
+                                                    class="transaction-item__type-name"
+                                                >
+                                                    Received Money
+                                                </p>
+                                                <span
+                                                    class="transaction-item__type-info"
+                                                    >Upwork Earning
+                                                </span>
+                                            </div>
+                                            <div class="transaction-item__info">
+                                                <span class="transaction__value"
+                                                    >+$1,600
+                                                </span>
+                                                <time class="transaction__date"
+                                                    >Sep 23
+                                                </time>
+                                            </div>
+                                        </li>
+                                        <!-- Transaction item 4 -->
+                                        <li class="transaction-item">
+                                            <img
+                                                src="./assets/icons/transaction-type-icon-04.svg"
+                                                alt=""
+                                            />
+                                            <div class="transaction-item__type">
+                                                <p
+                                                    class="transaction-item__type-name"
+                                                >
+                                                    Pay Bill
+                                                </p>
+                                                <span
+                                                    class="transaction-item__type-info"
+                                                    >Upwork Earning
+                                                </span>
+                                            </div>
+                                            <div class="transaction-item__info">
+                                                <span class="transaction__value"
+                                                    >- $600
+                                                </span>
+                                                <time class="transaction__date"
+                                                    >Sep 23
+                                                </time>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Decorations -->
+                                <div
+                                    class="deposite-info"
+                                    data-aos="flip-right"
+                                    data-aos-duration="2000"
+                                >
+                                    <img
+                                        src="./assets/icons/deposite-icon.svg"
+                                        alt=""
+                                        class="deposite-info__icon"
+                                    />
+                                    <p class="deposite-info__title">Deposite</p>
+                                    <span class="deposite-info__value"
+                                        >$32000
+                                    </span>
+                                </div>
+
+                                <div
+                                    class="interest-info"
+                                    data-aos="flip-right"
+                                    data-aos-duration="2000"
+                                >
+                                    <b class="interest-info__title">0%</b>
+                                    <p class="interest-info__desc">Interest</p>
+                                </div>
+
+                                <div
+                                    class="funds"
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
+                                >
+                                    <img
+                                        src="./assets/icons/fund-saved-icon.png"
+                                        alt=""
+                                        class="funds__saved-icon"
+                                    />
+                                    <div class="funds__info">
+                                        <span class="funds__value">$1.310</span>
+                                        <p class="funds__name">SECURED FUNDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
