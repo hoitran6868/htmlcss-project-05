@@ -485,3 +485,104 @@ button {
     line-height: 1;
     color: #fff;
 }
+
+/* How it works-Guide */
+
+.guide {
+    margin-top: 150px;
+}
+
+.guide__inner {
+    display: flex;
+}
+
+.guide__media {
+    width: 470px;
+}
+
+.guide__media-wrapper {
+    padding: 0 7px;
+    position: relative;
+}
+
+.guide__media-wrapper::before {
+    content: url(../img/guide-decor.svg);
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.guide__img {
+    width: 456px;
+}
+
+.guide__bank-icon {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+}
+
+.guide__notification {
+    display: flex;
+    position: absolute;
+    bottom: 96px;
+    right: -100px;
+    column-gap: 10px;
+    padding: 15px 30px 15px 15px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.guide__notification-content {
+    padding: 2px 0;
+}
+
+.guide__notification-info {
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #212832;
+}
+
+.guide__notification-desc {
+    margin-top: 5px;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #696d76;
+}
+
+.guide__content {
+    padding: 28px 0 28px 230px;
+}
+
+.guide__list {
+    margin-top: 70px;
+}
+
+.guide__item-title {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #212832;
+}
+
+.guide__item + .guide__item {
+    margin-top: 28px;
+}
+
+.guide__item-desc {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #696d76;
+}
