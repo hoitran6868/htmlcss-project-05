@@ -589,24 +589,25 @@ button {
     color: #696d76;
 }
 
-/* Payment */
-.payment {
+/* Feature */
+.feature {
     padding-top: 160px;
 }
 
-.payment__inner {
+/* Feature section first */
+.feature__section-first {
     display: flex;
 }
 
-.payment__content {
+.feature__content {
     width: 40%;
 }
 
-.payment__list {
+.feature__list {
     margin-top: 28px;
 }
 
-.payment__item {
+.feature__item {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
@@ -616,7 +617,7 @@ button {
     margin-bottom: 18px;
 }
 
-.payment__item::before {
+.feature__item::before {
     content: "";
     display: inline-block;
     margin-right: 12px;
@@ -626,18 +627,18 @@ button {
     background: #7264d6;
 }
 
-.payment__cta {
+.feature__cta {
     margin-top: 26px;
 }
 
-/* Payment media */
-.payment__media {
+/* Feature media */
+.feature__media-first {
     margin-left: 130px;
     position: relative;
 }
 
-/* Payment card */
-.payment__card {
+/* Feature card */
+.feature__card {
     position: relative;
     margin: 88px 88px 96px 0;
     padding: 38px;
@@ -652,7 +653,7 @@ button {
     overflow: hidden;
 }
 
-.payment__card-type {
+.feature__card-type {
     position: relative;
     font-size: 2.4rem;
     font-weight: 400;
@@ -660,7 +661,7 @@ button {
     line-height: 1.375;
 }
 
-.payment__card-account-balance {
+.feature__card-account-balance {
     position: relative;
     margin-top: 10px;
     font-size: 3.2rem;
@@ -669,7 +670,7 @@ button {
     color: #fff;
 }
 
-.payment__card-info {
+.feature__card-info {
     margin-top: 98px;
     display: flex;
     column-gap: 26px;
@@ -679,25 +680,25 @@ button {
     line-height: 1.35;
 }
 
-.payment__card-expiration,
-.payment__card-holder {
+.feature__card-expiration,
+.feature__card-holder {
     min-width: 114px;
 }
 
-.payment__card-type,
-.payment__card-account-balance,
-.payment__card-holder,
-.payment__card-holder-name {
+.feature__card-type,
+.feature__card-account-balance,
+.feature__card-holder,
+.feature__card-holder-name {
     z-index: 1;
 }
 
-.payment__card-value {
+.feature__card-value {
     display: flex;
     margin-top: 5px;
     column-gap: 81px;
 }
 
-.payment__card-expiration-date {
+.feature__card-expiration-date {
     width: 59px;
     font-size: 2.2rem;
     font-weight: 600;
@@ -705,7 +706,7 @@ button {
     color: #fff;
 }
 
-.payment__card-holder-name {
+.feature__card-holder-name {
     min-width: 196px;
     font-size: 2.2rem;
     font-weight: 600;
@@ -713,26 +714,26 @@ button {
     color: #fff;
 }
 
-.payment__card-decor {
+.feature__card-decor {
     position: absolute;
 }
 
-.payment__card-decor:nth-of-type(1) {
+.feature__card-decor:nth-of-type(1) {
     top: 38px;
     right: 38px;
 }
 
-.payment__card-decor:nth-of-type(2) {
+.feature__card-decor:nth-of-type(2) {
     top: 0;
     left: 0;
 }
 
-.payment__card-decor:nth-of-type(3) {
+.feature__card-decor:nth-of-type(3) {
     right: 0;
     bottom: 0;
 }
 
-.payment__transaction {
+.feature__transaction {
     position: absolute;
     top: 40px;
     right: 0;
@@ -744,12 +745,12 @@ button {
     box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
 }
 
-.payment__transaction-icon {
+.feature__transaction-icon {
     width: 40px;
     height: 40px;
 }
 
-.payment__income {
+.feature__income {
     position: absolute;
     bottom: 37px;
     right: 0;
@@ -760,7 +761,7 @@ button {
     background: #439f90;
 }
 
-.payment__income-desc {
+.feature__income-desc {
     margin-top: 14px;
     font-size: 1.2rem;
     font-weight: 400;
@@ -768,10 +769,71 @@ button {
     color: #fff;
 }
 
-.payment__income-value {
+.feature__income-value {
     margin-top: 6px;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.38;
     color: #fff;
+}
+
+/* Feature section second */
+.feature__section-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 230px;
+    margin-top: 160px;
+}
+
+.feature__media-wrapper {
+    position: relative;
+    padding: 0 28px;
+}
+
+.feature__media-wrapper::before {
+    position: absolute;
+    content: url(../img/feature-decor-04.svg);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.feature__img {
+    width: 413px;
+}
+
+.feature__icon {
+    position: absolute;
+    bottom: 170px;
+    right: -140px;
+    z-index: 1;
+}
+
+.feature-payment-method__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #212832;
+}
+
+.feature-payment-method {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    padding: 28px;
+    width: 281px;
+    height: 220px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+}
+
+.feature-payment-method__card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 18px;
+    margin-top: 20px;
 }
