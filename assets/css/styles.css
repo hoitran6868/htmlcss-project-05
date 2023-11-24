@@ -1072,3 +1072,90 @@ button {
 .blog-info__link:hover {
     color: #7264d6;
 }
+
+/* Install */
+.install {
+    margin-top: 160px;
+}
+
+.install__inner {
+    position: relative;
+    height: 466px;
+    border-radius: 24px;
+    background: #7264d6;
+    padding: 100px 0;
+}
+
+.install__label {
+    justify-content: center;
+}
+
+.install__label-name {
+    color: #fff;
+}
+
+.install__label-decor {
+    margin-right: 12px;
+}
+
+.install__heading {
+    text-align: center;
+    color: #fff;
+}
+
+.install__decor-star {
+    position: absolute;
+}
+
+.install__desc {
+    margin-top: 18px;
+    width: 435px;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.install__app-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    column-gap: 18px;
+}
+
+.install__decor-star:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.install__decor-star:nth-of-type(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.install__decor-star:nth-of-type(3) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.install__decor-star:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
+}
+
+.install__decor-star {
+    position: absolute;
+    animation: spinner 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes spinner {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
