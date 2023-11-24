@@ -169,7 +169,7 @@ button {
 }
 
 .hero__heading--highlight {
-    color: #7264d6;
+    color: var(--primary--color);
 }
 
 .hero__desc {
@@ -624,7 +624,7 @@ button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #7264d6;
+    background: var(--primary--color);
 }
 
 .feature__cta {
@@ -982,8 +982,8 @@ button {
 }
 
 .review__dot-active {
-    background: #7264d6;
-    border-color: #7264d6;
+    background: var(--primary--color);
+    border-color: var(--primary--color);
 }
 
 /* Blog */
@@ -1070,7 +1070,7 @@ button {
 }
 
 .blog-info__link:hover {
-    color: #7264d6;
+    color: var(--primary--color);
 }
 
 /* Install */
@@ -1082,7 +1082,7 @@ button {
     position: relative;
     height: 466px;
     border-radius: 24px;
-    background: #7264d6;
+    background: var(--primary--color);
     padding: 100px 0;
 }
 
@@ -1158,4 +1158,112 @@ button {
     to {
         rotate: 360deg;
     }
+}
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+    background: #fafbff;
+    padding-bottom: 100px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 163px;
+}
+
+.footer__column {
+    margin-top: 100px;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #212832;
+}
+
+.footer__list {
+    margin-top: 24px;
+}
+
+.footer__item + .footer__item {
+    margin-top: 9px;
+}
+
+.footer__item-link {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #6a6e78;
+}
+
+.footer__address-desc {
+    width: 371px;
+}
+
+.footer__title {
+    margin-top: 48px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #0a142f;
+}
+
+.subsribe-form {
+    margin-top: 24px;
+    display: flex;
+}
+
+.subscribe-form__input {
+    padding: 12px;
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #8e919a;
+    outline: none;
+}
+
+.subscribe-form__btn {
+    --height: 52px;
+
+    min-width: 113px;
+    margin-left: 20px;
+    background: var(--primary--color);
+    border-color: var(--primary--color);
+}
+
+.footer__contact {
+    display: flex;
+    margin-top: 54px;
+    column-gap: 100px;
+}
+
+.footer__contact-email,
+.footer__contact-phone {
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    text-decoration-line: underline;
+    color: #6a6e78;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    text-align: center;
+    padding: 28px 0;
+    background: var(--primary--color);
+}
+
+.footer__copyright-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #fff;
 }
